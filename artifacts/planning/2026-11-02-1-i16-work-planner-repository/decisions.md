@@ -28,6 +28,7 @@
 20. **#1427 closes as not planned.** Its section-scoped links, plain-text mentions and conditional citations are carried into E06, and its check definitions into E05. Its remaining rows and efficacy walks need no work, because prosiform bundles linked content at compile time.
 21. **One home for the record.** The prosiform plan drafted in workflow-server's `engineering` branch is merged into this record, and the draft folder is deleted there.
 22. **No Deferred Debt epic.** Findings are fixed in the delivery that finds them.
+23. **Fixes land before the extraction.** E00 W00 depends on [m2ux/workflow-server I17:E00](https://github.com/m2ux/workflow-server/issues/1598), Pre-Cutover Fixes, which delivers every Work Planner fix found before the cutover into workflow-server's `workspace`. The extraction is cut from a `workspace` commit holding all of them, so it carries each fix. The cell names the epic, not its rows, because that epic takes further rows as faults are found.
 
 ## Planning Decisions
 
