@@ -12,7 +12,22 @@
 8. **workflow-canon stays untouched.** The removal edits nothing under `skills/workflow-canon`, and its `references/revise-mode.md` still names `skills/work-planner`, as the initiative's Non-Goals state.
 9. **Priority field.** m2ux/workflow-server#1595 becomes an epic whole. Priority is a Number field on every theme board and the Initiative template, a larger number runs first, and an empty value never starts. Numbered labels move into the field unchanged, word labels move nothing, and every `priority:` label is then deleted once prosiform's workspace pins the field-reading skill. Board Queue reads only the field. #1595 is closed as not planned, linking the epic.
 10. **Label deletion is its own row.** It takes no pull request and is delivered by the before-and-after label listing committed to this record, as the history extraction is delivered by its commit. Every pull-request task's criteria are ticked at merge.
-11. **Ranking.** Only the user ranks work. The user set `priority: 2` on I16, E00 and E01, and `priority: 1` on E03 (issue #4); the Skill Refactor epic (#5) carries none until the user re-ranks.
+11. **Ranking.** Only the user ranks work. The user ranks E00 and E01 at 5, E02 and E03 at 4, E04 at 3, E05 and E06 at 2, and E07 at 1, applied as `priority: <n>` labels while I16 still ranks by labels. The initiative keeps `priority: 2`.
+12. **Used through prosiform.** I16's goal also holds four clauses, confirmed for the prosiform epics:
+    - **G1.** Every Work Planner mode compiles under prosiform (`pf`) within its default output budget with no warnings.
+    - **G2.** Work Planner is used through `pf`: SKILL.md bootstraps by running `pf` and following it; sub-agent hand-offs use the dispatch operators (`⇉`, `⫽`) and material read only in some cases uses deferral (`¬`); a link appears only where the reader must have its content, and prose that merely names another mode uses plain text; links name a section wherever the target has a heading.
+    - **G3.** The shared skill guidelines (`guidelines.md`) and the shared check (`scripts/check_skill_files.py`, with its tests) state and enforce those prosiform rules.
+    - **G4.** The shared guide defines each check the repository runs (what it decides, which skills it binds, how it is run, where its tests live), and prose names a check by linking to that definition rather than by bare path.
+13. **Four epics after the Priority field.** E04 Shared Prosiform Rules, E05 Check Definitions, E06 Work Planner Links and E07 Use Through Prosiform, in that order. No proposal stands behind them; the clauses above are their source.
+14. **Paths at the new root.** Every file-change declaration, component and criterion instrument names prosiform-skills' root layout (`guidelines.md`, `scripts/check_skill_files.py`, `test/`, `work-planner/`), commands name scripts relative to the skill as decision 7 states, and pull requests target `main`.
+15. **Every skill the check reads is held.** The shared check holds every skill it runs over to the prosiform rules; no option names the skills it holds. workflow-server keeps its own diverging copy of the check, as decision 3 states. The check gains its prosiform findings last in E07, after Work Planner's files conform, so no branch carries a finding against its own files.
+16. **Dependencies follow the link.** E04 to E07 depend on E02's rows where they share files (SKILL.md, command paths, `scripts/check_skill_files.py`, the guide's examples) and follow E03's rows where they share files (`plan-mode.md`, Board Queue).
+17. **Baseline revision.** Held open, and settled before E07 starts. See [OQ2](#oq2-baseline-revision).
+18. **Prosiform version.** Held open while prosiform is under heavy revision, and settled before E04 and E07 start. Bodies name the pinned `pf` without a version. See [OQ1](#oq1-grammar-version).
+19. **#1427 in References.** m2ux/workflow-server#1427 is cited in I16's References as the source of the carried evidence. It stands on board 17, which the same-board References rule bars; the user keeps it as a recorded departure.
+20. **#1427 closes as not planned.** Its section-scoped links, plain-text mentions and conditional citations are carried into E06, and its check definitions into E05. Its remaining rows and efficacy walks need no work, because prosiform bundles linked content at compile time.
+21. **One home for the record.** The prosiform plan drafted in workflow-server's `engineering` branch is merged into this record, and the draft folder is deleted there.
+22. **No Deferred Debt epic.** Findings are fixed in the delivery that finds them.
 
 ## Planning Decisions
 
@@ -26,7 +41,28 @@
 - **One contending pair, answered by order.** The extraction and the refactor's script-naming row both declare `main:work-planner/SKILL.md`. The extraction lands before the refactor can start, and the proposed numbers separate the two epics.
 - **Labels go last.** Deleting the labels while an installed copy still reads them would leave that copy's queue with no priority, so they go only after prosiform's workspace pins a skill that reads the field.
 - **Joined queue change.** Board Queue's read and every other priority mention change in one pull request, so the skill never reads one source and names another.
+- **Rules before conformance.** E04 states the prosiform rules in `guidelines.md` only; the check machinery that enforces them is E07's last two rows, joined in one pull request.
+- **Prose before its finding.** E05 links each check's definition from prose before the check reports a bare check path, so E05's base never carries that finding.
+- **Inventories verify E06.** The check's prosiform findings land after E06, so E06's criteria are verified by the link, mode-link, hand-off and conditional-citation inventories each task records here, an instrument independent of the check. E07's final run of the check confirms them on `main`.
+- **The bundle comparison is a record.** E07 W03 takes no pull request and is delivered by the comparison committed to this record, as the label deletion is delivered by its listing.
+- **The Checks entry grows with the check.** E05 defines each check as it stands; E07's check rows extend the shared check's entry with the findings and compile run they add.
+- **Measurements carried from the draft.** The bundle sizes, link counts and check callers were measured at workflow-server `785a5ee8c`, the content prosiform-skills' extraction is cut from, with `pf` 0.12.0. See [Evidence](evidence.md).
 
 ## Proposed Order
 
-`deps.py` proposes E00 and E01 at 2, and E02 and E03 at 1: the cutover and the workspace linkage first, together, then the refactor and the Priority field, together. Within the linkage, the template's script rows can start at once; prosiform's link waits for them and for the extraction, and the template's removal waits for the link.
+[`deps.py`](dependencies.txt) proposes E00 and E01 at 4, E02, E03 and E04 at 3, E05 and E06 at 2, and E07 at 1. The user's ranking, decision 11, keeps that order and separates E04 from E02 and E03, so every contending pair the report prints sits in epics of different numbers. Within the linkage, the template's script rows can start at once; prosiform's link waits for them and for the extraction, and the template's removal waits for the link.
+
+## Open Questions
+
+### OQ1. Grammar Version
+
+The installed `pf` reports 0.12.0 (`skill-markdown-v1`). Prosiform's README and source on `main` name `skill-markdown-v4` at 0.16.0, unreleased; the latest release, 0.15.0, is `skill-markdown-v3`. The bootstrap the goal names, run bare `pf` and follow the guide it prints, exists only on `main`.
+
+The user holds the version undecided while prosiform is under heavy revision. Bodies name the pinned `pf` without a version. Settled before E04 or E07 starts.
+
+### OQ2. Baseline Revision
+
+The baseline E07's bundle-size comparison measures against. Settled before E07 starts.
+
+- **A.** The extraction commit on prosiform-skills' `main`, whose content is workflow-server `785a5ee8c`, where the measurements in [Evidence](evidence.md) were taken.
+- **B.** workflow-server `ed508443`, whose Work Planner markdown equals md-composer `93dad5b9`; md-composer `93dad5b9` is not a workflow-server object.
