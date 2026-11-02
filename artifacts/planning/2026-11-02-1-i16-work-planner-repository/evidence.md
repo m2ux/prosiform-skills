@@ -6,7 +6,7 @@ Measurements behind the Problem sections of E04 to E07. Every figure names the r
 
 | Name | Revision | Note |
 | --- | --- | --- |
-| Head | workflow-server `785a5ee8c` (origin/workspace, 2026-11-02) | The content prosiform-skills' extraction is cut from. Exported with `git archive` and measured there. |
+| Head | workflow-server `785a5ee8c` (origin/workspace, 2026-11-02) | The evidence revision; the extraction is cut from workflow-server's `workspace` head once I17's Pre-Cutover Fixes epic closes. Exported with `git archive` and measured there. |
 | Baseline candidate in md-composer | md-composer `93dad5b9` | Not an object in workflow-server. Its second parent is workflow-server `ed508443`, an ancestor of head. |
 | Baseline candidate in workflow-server | `ed508443` | Work Planner markdown identical to md-composer `93dad5b9`; only `test/test_modes.py` differs. |
 

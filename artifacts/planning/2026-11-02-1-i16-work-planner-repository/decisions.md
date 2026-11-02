@@ -29,6 +29,7 @@
 21. **One home for the record.** The prosiform plan drafted in workflow-server's `engineering` branch is merged into this record, and the draft folder is deleted there.
 22. **No Deferred Debt epic.** Findings are fixed in the delivery that finds them.
 23. **Fixes land before the extraction.** E00 W00 depends on [m2ux/workflow-server I17:E00](https://github.com/m2ux/workflow-server/issues/1598), Pre-Cutover Fixes, which delivers every Work Planner fix found before the cutover into workflow-server's `workspace`. The extraction is cut from a `workspace` commit holding all of them, so it carries each fix. The cell names the epic, not its rows, because that epic takes further rows as faults are found.
+24. **Extraction point.** E00 W00 cuts the extraction from workflow-server's `workspace` head once I17's Pre-Cutover Fixes epic closes, and records that commit in this record. No plan names the commit in advance; `785a5ee8c` is the evidence revision only.
 
 ## Planning Decisions
 
@@ -47,7 +48,7 @@
 - **Inventories verify E06.** The check's prosiform findings land after E06, so E06's criteria are verified by the link, mode-link, hand-off and conditional-citation inventories each task records here, an instrument independent of the check. E07's final run of the check confirms them on `main`.
 - **The bundle comparison is a record.** E07 W03 takes no pull request and is delivered by the comparison committed to this record, as the label deletion is delivered by its listing.
 - **The Checks entry grows with the check.** E05 defines each check as it stands; E07's check rows extend the shared check's entry with the findings and compile run they add.
-- **Measurements carried from the draft.** The bundle sizes, link counts and check callers were measured at workflow-server `785a5ee8c`, the content prosiform-skills' extraction is cut from, with `pf` 0.12.0. See [Evidence](evidence.md).
+- **Measurements carried from the draft.** The bundle sizes, link counts and check callers were measured at workflow-server `785a5ee8c`, the evidence revision, with `pf` 0.12.0. See [Evidence](evidence.md).
 
 ## Proposed Order
 
@@ -65,5 +66,5 @@ The user holds the version undecided while prosiform is under heavy revision. Bo
 
 The baseline E07's bundle-size comparison measures against. Settled before E07 starts.
 
-- **A.** The extraction commit on prosiform-skills' `main`, whose content is workflow-server `785a5ee8c`, where the measurements in [Evidence](evidence.md) were taken.
+- **A.** The extraction commit on prosiform-skills' `main`, cut from workflow-server's `workspace` head once I17's Pre-Cutover Fixes epic closes.
 - **B.** workflow-server `ed508443`, whose Work Planner markdown equals md-composer `93dad5b9`; md-composer `93dad5b9` is not a workflow-server object.
