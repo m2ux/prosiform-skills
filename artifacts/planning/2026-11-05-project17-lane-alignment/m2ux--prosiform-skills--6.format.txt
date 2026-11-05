@@ -1,0 +1,15 @@
+#6 epic (open): 1 fixed, 0 to apply, 0 to decide
+  fixed: Work Breakdown columns added: Lane
+--- body
++++ /tmp/project17-align/m2ux--prosiform-skills--6.fixed.md
+@@ -24,6 +24,6 @@
+ 
+-| Task | Description | Coverage | Depends on | Joins | Done |
+-| --- | --- | --- | --- | --- | --- |
+-| [W01](https://github.com/m2ux/prosiform-skills/blob/engineering/artifacts/planning/2026-11-02-1-i16-work-planner-repository/e04/w01.md) | Bootstrap and link rules stated | AC1, AC2, AC3 | [E02:W02](https://github.com/m2ux/prosiform-skills/issues/5) | W02 | |
+-| [W02](https://github.com/m2ux/prosiform-skills/blob/engineering/artifacts/planning/2026-11-02-1-i16-work-planner-repository/e04/w02.md) | Operator and budget rules stated | AC4, AC5 | [E02:W02](https://github.com/m2ux/prosiform-skills/issues/5) | W01 | |
++| Task | Description | Coverage | Depends on | Joins | Lane | Done |
++| --- | --- | --- | --- | --- | --- | --- |
++| [W01](https://github.com/m2ux/prosiform-skills/blob/engineering/artifacts/planning/2026-11-02-1-i16-work-planner-repository/e04/w01.md) | Bootstrap and link rules stated | AC1, AC2, AC3 | [E02:W02](https://github.com/m2ux/prosiform-skills/issues/5) | W02 | | |
++| [W02](https://github.com/m2ux/prosiform-skills/blob/engineering/artifacts/planning/2026-11-02-1-i16-work-planner-repository/e04/w02.md) | Operator and budget rules stated | AC4, AC5 | [E02:W02](https://github.com/m2ux/prosiform-skills/issues/5) | W01 | | |
+ 

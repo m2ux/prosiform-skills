@@ -1,0 +1,29 @@
+--- before
++++ aligned
+@@ -26,13 +26,13 @@
+ 
+ ## Work Breakdown
+ 
+-| Task | Description | Coverage | Depends on | Joins | Done |
+-| --- | --- | --- | --- | --- | --- |
+-| [W01](https://github.com/m2ux/prosiform-skills/blob/engineering/artifacts/planning/2026-11-02-1-i16-work-planner-repository/e03/w01.md) | Priority Number field on every board | AC1, AC2 | [E00:W01](https://github.com/m2ux/prosiform-skills/issues/2), [E01:W04](https://github.com/m2ux/prosiform-skills/issues/3) | | |
+-| [W02](https://github.com/m2ux/prosiform-skills/blob/engineering/artifacts/planning/2026-11-02-1-i16-work-planner-repository/e03/w02.md) | Board Queue reads the Priority field | AC3, AC4 | W01 | W03 | |
+-| [W03](https://github.com/m2ux/prosiform-skills/blob/engineering/artifacts/planning/2026-11-02-1-i16-work-planner-repository/e03/w03.md) | Planning sets the Priority field | AC5 | W01 | W02 | |
+-| [W04](https://github.com/m2ux/prosiform-skills/blob/engineering/artifacts/planning/2026-11-02-1-i16-work-planner-repository/e03/w04.md) | prosiform pins a skill reading the field | AC6 | W02, W03 | | |
+-| [W05](https://github.com/m2ux/prosiform-skills/blob/engineering/artifacts/planning/2026-11-02-1-i16-work-planner-repository/e03/w05.md) | Priority labels deleted | AC7 | W04 | | |
++| Task | Description | Coverage | Depends on | Joins | Lane | Done |
++| --- | --- | --- | --- | --- | --- | --- |
++| [W01](https://github.com/m2ux/prosiform-skills/blob/engineering/artifacts/planning/2026-11-02-1-i16-work-planner-repository/e03/w01.md) | Priority Number field on every board | AC1, AC2 | [E00:W01](https://github.com/m2ux/prosiform-skills/issues/2), [E01:W04](https://github.com/m2ux/prosiform-skills/issues/3) | | | |
++| [W02](https://github.com/m2ux/prosiform-skills/blob/engineering/artifacts/planning/2026-11-02-1-i16-work-planner-repository/e03/w02.md) | Board Queue reads the Priority field | AC3, AC4 | W01 | W03 | | |
++| [W03](https://github.com/m2ux/prosiform-skills/blob/engineering/artifacts/planning/2026-11-02-1-i16-work-planner-repository/e03/w03.md) | Planning sets the Priority field | AC5 | W01 | W02 | | |
++| [W04](https://github.com/m2ux/prosiform-skills/blob/engineering/artifacts/planning/2026-11-02-1-i16-work-planner-repository/e03/w04.md) | prosiform pins a skill reading the field | AC6 | W02, W03 | | | |
++| [W05](https://github.com/m2ux/prosiform-skills/blob/engineering/artifacts/planning/2026-11-02-1-i16-work-planner-repository/e03/w05.md) | Priority labels deleted | AC7 | W04 | | | |
+ 
+ ## Acceptance Criteria
+ 
+@@ -52,5 +52,3 @@
+ - **R4.** [m2ux/workflow-server#1591](https://github.com/m2ux/workflow-server/issues/1591) — no priority means no start.
+ 
+ 🤖 Generated with [Claude Code](https://claude.com/claude-code)
+-
+-

@@ -1,0 +1,23 @@
+--- before
++++ aligned
+@@ -26,10 +26,10 @@
+ 
+ ## Work Breakdown
+ 
+-| Task | Description | Coverage | Depends on | Joins | Done |
+-| --- | --- | --- | --- | --- | --- |
+-| [W00](https://github.com/m2ux/prosiform-skills/blob/engineering/artifacts/planning/2026-11-02-1-i16-work-planner-repository/e00/w00.md) | Skill history extracted into main | AC1, AC2, AC3 | [I17:E00](https://github.com/m2ux/workflow-server/issues/1598), [I17:E01](https://github.com/m2ux/workflow-server/issues/1615), [I17:E02](https://github.com/m2ux/workflow-server/issues/1616) | | |
+-| [W01](https://github.com/m2ux/prosiform-skills/blob/engineering/artifacts/planning/2026-11-02-1-i16-work-planner-repository/e00/w01.md) | Long-lived branches stated | AC4 | W00 | | |
++| Task | Description | Coverage | Depends on | Joins | Lane | Done |
++| --- | --- | --- | --- | --- | --- | --- |
++| [W00](https://github.com/m2ux/prosiform-skills/blob/engineering/artifacts/planning/2026-11-02-1-i16-work-planner-repository/e00/w00.md) | Skill history extracted into main | AC1, AC2, AC3 | [I17:E00](https://github.com/m2ux/workflow-server/issues/1598), [I17:E01](https://github.com/m2ux/workflow-server/issues/1615), [I17:E02](https://github.com/m2ux/workflow-server/issues/1616) | | | |
++| [W01](https://github.com/m2ux/prosiform-skills/blob/engineering/artifacts/planning/2026-11-02-1-i16-work-planner-repository/e00/w01.md) | Long-lived branches stated | AC4 | W00 | | | |
+ 
+ ## Acceptance Criteria
+ 
+@@ -44,5 +44,3 @@
+ - **R2.** [workflow-server `skills/` at the evidence revision](https://github.com/m2ux/workflow-server/tree/785a5ee8c715b802498aa41712e0489425a22cfa/skills) — the folder this epic extracts from.
+ 
+ 🤖 Generated with [Claude Code](https://claude.com/claude-code)
+-
+-

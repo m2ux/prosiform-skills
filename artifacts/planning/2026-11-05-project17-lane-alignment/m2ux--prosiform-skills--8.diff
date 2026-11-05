@@ -1,0 +1,19 @@
+--- before
++++ aligned
+@@ -30,11 +30,11 @@
+ 
+ ## Work Breakdown
+ 
+-| Task | Description | Coverage | Depends on | Joins | Done |
+-| --- | --- | --- | --- | --- | --- |
+-| [W01](https://github.com/m2ux/prosiform-skills/blob/engineering/artifacts/planning/2026-11-02-1-i16-work-planner-repository/e06/w01.md) | Work Planner links named by section | AC1 | [E02:W01](https://github.com/m2ux/prosiform-skills/issues/5), [E03:W02](https://github.com/m2ux/prosiform-skills/issues/4), [E03:W03](https://github.com/m2ux/prosiform-skills/issues/4), [E04:W01](https://github.com/m2ux/prosiform-skills/issues/6) | | |
+-| [W02](https://github.com/m2ux/prosiform-skills/blob/engineering/artifacts/planning/2026-11-02-1-i16-work-planner-repository/e06/w02.md) | Modes named in passing as text | AC2 | W01 | | |
+-| [W03](https://github.com/m2ux/prosiform-skills/blob/engineering/artifacts/planning/2026-11-02-1-i16-work-planner-repository/e06/w03.md) | Hand-offs dispatched, conditional reads deferred | AC3, AC4 | W02, [E04:W02](https://github.com/m2ux/prosiform-skills/issues/6) | | |
++| Task | Description | Coverage | Depends on | Joins | Lane | Done |
++| --- | --- | --- | --- | --- | --- | --- |
++| [W01](https://github.com/m2ux/prosiform-skills/blob/engineering/artifacts/planning/2026-11-02-1-i16-work-planner-repository/e06/w01.md) | Work Planner links named by section | AC1 | [E02:W01](https://github.com/m2ux/prosiform-skills/issues/5), [E03:W02](https://github.com/m2ux/prosiform-skills/issues/4), [E03:W03](https://github.com/m2ux/prosiform-skills/issues/4), [E04:W01](https://github.com/m2ux/prosiform-skills/issues/6) | | | |
++| [W02](https://github.com/m2ux/prosiform-skills/blob/engineering/artifacts/planning/2026-11-02-1-i16-work-planner-repository/e06/w02.md) | Modes named in passing as text | AC2 | W01 | | | |
++| [W03](https://github.com/m2ux/prosiform-skills/blob/engineering/artifacts/planning/2026-11-02-1-i16-work-planner-repository/e06/w03.md) | Hand-offs dispatched, conditional reads deferred | AC3, AC4 | W02, [E04:W02](https://github.com/m2ux/prosiform-skills/issues/6) | | | |
+ 
+ ## Acceptance Criteria
+ 

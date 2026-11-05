@@ -1,0 +1,17 @@
+--- before
++++ aligned
+@@ -24,10 +24,10 @@
+ 
+ ## Work Breakdown
+ 
+-| Task | Description | Coverage | Depends on | Joins | Done |
+-| --- | --- | --- | --- | --- | --- |
+-| [W01](https://github.com/m2ux/prosiform-skills/blob/engineering/artifacts/planning/2026-11-02-1-i16-work-planner-repository/e02/w01.md) | Scripts named relative to the skill | AC1, AC2 | [E00:W01](https://github.com/m2ux/prosiform-skills/issues/2), [E01:W04](https://github.com/m2ux/prosiform-skills/issues/3) | | |
+-| [W02](https://github.com/m2ux/prosiform-skills/blob/engineering/artifacts/planning/2026-11-02-1-i16-work-planner-repository/e02/w02.md) | Shared check run from the root | AC3, AC4 | [E00:W01](https://github.com/m2ux/prosiform-skills/issues/2), [E01:W04](https://github.com/m2ux/prosiform-skills/issues/3) | | |
++| Task | Description | Coverage | Depends on | Joins | Lane | Done |
++| --- | --- | --- | --- | --- | --- | --- |
++| [W01](https://github.com/m2ux/prosiform-skills/blob/engineering/artifacts/planning/2026-11-02-1-i16-work-planner-repository/e02/w01.md) | Scripts named relative to the skill | AC1, AC2 | [E00:W01](https://github.com/m2ux/prosiform-skills/issues/2), [E01:W04](https://github.com/m2ux/prosiform-skills/issues/3) | | | |
++| [W02](https://github.com/m2ux/prosiform-skills/blob/engineering/artifacts/planning/2026-11-02-1-i16-work-planner-repository/e02/w02.md) | Shared check run from the root | AC3, AC4 | [E00:W01](https://github.com/m2ux/prosiform-skills/issues/2), [E01:W04](https://github.com/m2ux/prosiform-skills/issues/3) | | | |
+ 
+ ## Acceptance Criteria
+ 

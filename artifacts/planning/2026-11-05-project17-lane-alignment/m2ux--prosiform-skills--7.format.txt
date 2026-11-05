@@ -1,0 +1,17 @@
+#7 epic (open): 1 fixed, 0 to apply, 0 to decide
+  fixed: Work Breakdown columns added: Lane
+--- body
++++ /tmp/project17-align/m2ux--prosiform-skills--7.fixed.md
+@@ -24,7 +24,7 @@
+ 
+-| Task | Description | Coverage | Depends on | Joins | Done |
+-| --- | --- | --- | --- | --- | --- |
+-| [W01](https://github.com/m2ux/prosiform-skills/blob/engineering/artifacts/planning/2026-11-02-1-i16-work-planner-repository/e05/w01.md) | Each check defined in the shared guide | AC1 | [E02:W02](https://github.com/m2ux/prosiform-skills/issues/5) | | |
+-| [W02](https://github.com/m2ux/prosiform-skills/blob/engineering/artifacts/planning/2026-11-02-1-i16-work-planner-repository/e05/w02.md) | Prose names each check by link | AC2 | W01, [E02:W01](https://github.com/m2ux/prosiform-skills/issues/5) | | |
+-| [W03](https://github.com/m2ux/prosiform-skills/blob/engineering/artifacts/planning/2026-11-02-1-i16-work-planner-repository/e05/w03.md) | Check reports a check named by path | AC3, AC4 | W02 | | |
++| Task | Description | Coverage | Depends on | Joins | Lane | Done |
++| --- | --- | --- | --- | --- | --- | --- |
++| [W01](https://github.com/m2ux/prosiform-skills/blob/engineering/artifacts/planning/2026-11-02-1-i16-work-planner-repository/e05/w01.md) | Each check defined in the shared guide | AC1 | [E02:W02](https://github.com/m2ux/prosiform-skills/issues/5) | | | |
++| [W02](https://github.com/m2ux/prosiform-skills/blob/engineering/artifacts/planning/2026-11-02-1-i16-work-planner-repository/e05/w02.md) | Prose names each check by link | AC2 | W01, [E02:W01](https://github.com/m2ux/prosiform-skills/issues/5) | | | |
++| [W03](https://github.com/m2ux/prosiform-skills/blob/engineering/artifacts/planning/2026-11-02-1-i16-work-planner-repository/e05/w03.md) | Check reports a check named by path | AC3, AC4 | W02 | | | |
+ 

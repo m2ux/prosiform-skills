@@ -1,0 +1,21 @@
+#9 epic (open): 1 fixed, 0 to apply, 0 to decide
+  fixed: Work Breakdown columns added: Lane
+--- body
++++ /tmp/project17-align/m2ux--prosiform-skills--9.fixed.md
+@@ -30,9 +30,9 @@
+ 
+-| Task | Description | Coverage | Depends on | Joins | Done |
+-| --- | --- | --- | --- | --- | --- |
+-| [W01](https://github.com/m2ux/prosiform-skills/blob/engineering/artifacts/planning/2026-11-02-1-i16-work-planner-repository/e07/w01.md) | Entry point bootstraps through prosiform | AC1 | [E06:W03](https://github.com/m2ux/prosiform-skills/issues/8) | | |
+-| [W02](https://github.com/m2ux/prosiform-skills/blob/engineering/artifacts/planning/2026-11-02-1-i16-work-planner-repository/e07/w02.md) | Every mode compiled within budget | AC2 | [E06:W03](https://github.com/m2ux/prosiform-skills/issues/8) | | |
+-| [W03](https://github.com/m2ux/prosiform-skills/blob/engineering/artifacts/planning/2026-11-02-1-i16-work-planner-repository/e07/w03.md) | Bundle sizes compared against baseline | AC3 | W01, W02 | | |
+-| [W04](https://github.com/m2ux/prosiform-skills/blob/engineering/artifacts/planning/2026-11-02-1-i16-work-planner-repository/e07/w04.md) | Check reports link scope and mode reach | AC4, AC5 | W01, W02, [E05:W03](https://github.com/m2ux/prosiform-skills/issues/7) | W05 | |
+-| [W05](https://github.com/m2ux/prosiform-skills/blob/engineering/artifacts/planning/2026-11-02-1-i16-work-planner-repository/e07/w05.md) | Check compiles each mode under budget | AC6, AC7, AC8 | W01, W02, [E05:W03](https://github.com/m2ux/prosiform-skills/issues/7) | W04 | |
++| Task | Description | Coverage | Depends on | Joins | Lane | Done |
++| --- | --- | --- | --- | --- | --- | --- |
++| [W01](https://github.com/m2ux/prosiform-skills/blob/engineering/artifacts/planning/2026-11-02-1-i16-work-planner-repository/e07/w01.md) | Entry point bootstraps through prosiform | AC1 | [E06:W03](https://github.com/m2ux/prosiform-skills/issues/8) | | | |
++| [W02](https://github.com/m2ux/prosiform-skills/blob/engineering/artifacts/planning/2026-11-02-1-i16-work-planner-repository/e07/w02.md) | Every mode compiled within budget | AC2 | [E06:W03](https://github.com/m2ux/prosiform-skills/issues/8) | | | |
++| [W03](https://github.com/m2ux/prosiform-skills/blob/engineering/artifacts/planning/2026-11-02-1-i16-work-planner-repository/e07/w03.md) | Bundle sizes compared against baseline | AC3 | W01, W02 | | | |
++| [W04](https://github.com/m2ux/prosiform-skills/blob/engineering/artifacts/planning/2026-11-02-1-i16-work-planner-repository/e07/w04.md) | Check reports link scope and mode reach | AC4, AC5 | W01, W02, [E05:W03](https://github.com/m2ux/prosiform-skills/issues/7) | W05 | | |
++| [W05](https://github.com/m2ux/prosiform-skills/blob/engineering/artifacts/planning/2026-11-02-1-i16-work-planner-repository/e07/w05.md) | Check compiles each mode under budget | AC6, AC7, AC8 | W01, W02, [E05:W03](https://github.com/m2ux/prosiform-skills/issues/7) | W04 | | |
+ 

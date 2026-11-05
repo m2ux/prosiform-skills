@@ -1,0 +1,19 @@
+#2 epic (open): 1 fixed, 0 to apply, 0 to decide
+  fixed: Work Breakdown columns added: Lane
+--- body
++++ /tmp/project17-align/m2ux--prosiform-skills--2.fixed.md
+@@ -28,6 +28,6 @@
+ 
+-| Task | Description | Coverage | Depends on | Joins | Done |
+-| --- | --- | --- | --- | --- | --- |
+-| [W00](https://github.com/m2ux/prosiform-skills/blob/engineering/artifacts/planning/2026-11-02-1-i16-work-planner-repository/e00/w00.md) | Skill history extracted into main | AC1, AC2, AC3 | [I17:E00](https://github.com/m2ux/workflow-server/issues/1598), [I17:E01](https://github.com/m2ux/workflow-server/issues/1615), [I17:E02](https://github.com/m2ux/workflow-server/issues/1616) | | |
+-| [W01](https://github.com/m2ux/prosiform-skills/blob/engineering/artifacts/planning/2026-11-02-1-i16-work-planner-repository/e00/w01.md) | Long-lived branches stated | AC4 | W00 | | |
++| Task | Description | Coverage | Depends on | Joins | Lane | Done |
++| --- | --- | --- | --- | --- | --- | --- |
++| [W00](https://github.com/m2ux/prosiform-skills/blob/engineering/artifacts/planning/2026-11-02-1-i16-work-planner-repository/e00/w00.md) | Skill history extracted into main | AC1, AC2, AC3 | [I17:E00](https://github.com/m2ux/workflow-server/issues/1598), [I17:E01](https://github.com/m2ux/workflow-server/issues/1615), [I17:E02](https://github.com/m2ux/workflow-server/issues/1616) | | | |
++| [W01](https://github.com/m2ux/prosiform-skills/blob/engineering/artifacts/planning/2026-11-02-1-i16-work-planner-repository/e00/w01.md) | Long-lived branches stated | AC4 | W00 | | | |
+ 
+@@ -46,3 +46 @@
+ 🤖 Generated with [Claude Code](https://claude.com/claude-code)
+-
+-
