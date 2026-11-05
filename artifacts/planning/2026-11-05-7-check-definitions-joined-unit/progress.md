@@ -1,0 +1,5 @@
+- [x] Refresh the initiative, eight epics, work items and PR inventory.
+- [x] Apply reciprocal joins, preserve external prerequisites and derive the initiative gate.
+- [x] Check full dependencies, lane consistency, criterion preservation and all issue formats.
+- [ ] Publish and verify the saved initiative and epic bodies (in progress).
+- [ ] Continue the remaining style-activation decision before I17 delivery.

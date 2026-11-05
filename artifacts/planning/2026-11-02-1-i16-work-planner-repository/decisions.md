@@ -68,3 +68,7 @@ The baseline E07's bundle-size comparison measures against. Settled before E07 s
 
 - **A.** The extraction commit on prosiform-skills' `main`, cut from workflow-server's `workspace` head once I17's Pre-Cutover Fixes epic closes.
 - **B.** workflow-server `ed508443`, whose Work Planner markdown equals md-composer `93dad5b9`; md-composer `93dad5b9` is not a workflow-server object.
+
+## Joined Check Definitions, 5 November 2026
+
+The user confirms E05 W01 and W02 as one pull request, waiting for both E02 W01 and W02. The Joins cells are reciprocal; there is no dependency between members. Their prerequisite union derives E02 as E05's initiative-level prerequisite. The unit is unlaned, and the third row consumes its completed prose output through W02. The row ids, criteria and work items retain their identities.

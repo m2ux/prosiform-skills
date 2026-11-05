@@ -12,6 +12,8 @@ It matters because the skill's history, pull requests and planning have shared a
 
 | Artifact | What it holds |
 | --- | --- |
+| [I16 body](bodies/i16.md) | Initiative body with derived epic dependencies |
+| [E05 body](bodies/e05.md) | Check Definitions body with its confirmed joined unit |
 | [Decisions](decisions.md) | The user's decisions, the planning decisions taken from them, and the proposed order |
 | [Goal trace](goal-trace.md) | Each goal clause traced to its criteria and epics, the ranked gaps and the outside threats |
 | [Pair decisions](joins.md) | The rows kept as separate pieces of work, and why |

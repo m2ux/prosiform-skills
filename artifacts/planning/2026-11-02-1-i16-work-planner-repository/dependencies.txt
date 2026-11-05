@@ -1,7 +1,7 @@
 --- problems
 none
 
---- joins: eligible pairs named in neither Joins nor a record
+--- joins: candidate units, rows of one epic extending one component
 none
 
 --- advisory: numbering against start order
@@ -22,11 +22,11 @@ none
 4 E04:W01 - Bootstrap and link rules stated
 4 E04:W02 - Operator and budget rules stated
 4 E05:W01 - Each check defined in the shared guide
+4 E05:W02 - Prose names each check by link
 5 E03:W04 - prosiform pins a skill reading the field
-5 E05:W02 - Prose names each check by link
+5 E05:W03 - Check reports a check named by path
 5 E06:W01 - Work Planner links named by section
 6 E03:W05 - Priority labels deleted
-6 E05:W03 - Check reports a check named by path
 6 E06:W02 - Modes named in passing as text
 7 E06:W03 - Hand-offs dispatched, conditional reads deferred
 8 E07:W01 - Entry point bootstraps through prosiform

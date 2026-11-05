@@ -1,0 +1,11 @@
+--- before
++++ joined
+@@ -55,7 +55,7 @@
+ | [E02](https://github.com/m2ux/prosiform-skills/issues/5) | Skill Refactor | AC2 | [E00](https://github.com/m2ux/prosiform-skills/issues/2), [E01](https://github.com/m2ux/prosiform-skills/issues/3) | |
+ | [E03](https://github.com/m2ux/prosiform-skills/issues/4) | Priority Field | AC5, AC6 | [E00](https://github.com/m2ux/prosiform-skills/issues/2), [E01](https://github.com/m2ux/prosiform-skills/issues/3) | |
+ | [E04](https://github.com/m2ux/prosiform-skills/issues/6) | Shared Prosiform Rules | AC12 | [E00](https://github.com/m2ux/prosiform-skills/issues/2), [E01](https://github.com/m2ux/prosiform-skills/issues/3) | |
+-| [E05](https://github.com/m2ux/prosiform-skills/issues/7) | Check Definitions | AC14 | [E00](https://github.com/m2ux/prosiform-skills/issues/2), [E01](https://github.com/m2ux/prosiform-skills/issues/3) | |
++| [E05](https://github.com/m2ux/prosiform-skills/issues/7) | Check Definitions | AC14 | [E02](https://github.com/m2ux/prosiform-skills/issues/5) |  |
+ | [E06](https://github.com/m2ux/prosiform-skills/issues/8) | Work Planner Links | AC9, AC10 | [E02](https://github.com/m2ux/prosiform-skills/issues/5), [E04](https://github.com/m2ux/prosiform-skills/issues/6) | |
+ | [E07](https://github.com/m2ux/prosiform-skills/issues/9) | Use Through Prosiform | AC7, AC8, AC9, AC11, AC13 | [E06](https://github.com/m2ux/prosiform-skills/issues/8) | |
+ 

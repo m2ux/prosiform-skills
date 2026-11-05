@@ -1,0 +1,101 @@
+## Overview
+
+The work-planner skill lives in prosiform-skills, with its history and the shared files it is checked against, and the workspace that uses it runs it from a pinned commit of that repository. workflow-server's `workspace` template carries no copy, the skill then fits its new root, and each board's Priority field is the one source of a rank. The skill is used through prosiform: a session starts by running `pf` and follows the bundle of the mode it selects, every mode compiles within prosiform's default output budget with no warning, a link stands only where its reader must have the content and names the section it needs, and the shared guide and check state, define and enforce those rules. The goal the reviews test against is one home for the skill, cut over and linked before any refactoring, ranking work by the board and used through prosiform.
+
+## Problem
+
+The skill has no home of its own, and it is written for a reader who follows links one at a time while prosiform compiles every local link into one bundle.
+
+- **It lives inside an unrelated repository.**
+  Its [entry point](https://github.com/m2ux/workflow-server/blob/785a5ee8c715b802498aa41712e0489425a22cfa/skills/work-planner/SKILL.md#L1-L5) sits in workflow-server's `skills/` beside three other skills, so its history and pull requests are workflow-server's.
+- **Its install is a copy.**
+  prosiform's workspace receives the skill as plain files from workflow-server's template, and records no version.
+- **Its commands assume that layout.**
+  71 occurrences of `skills/work-planner` in 22 of its files hold only under a `skills/` folder.
+- **A rank has two homes.**
+  Board Queue ranks by [`priority:` labels](https://github.com/m2ux/workflow-server/blob/785a5ee8c715b802498aa41712e0489425a22cfa/skills/work-planner/scripts/board-queue.py#L33), while board 17's Priority field is a single-select nothing reads.
+- **Five modes overflow the default budget.**
+  At [785a5ee8c](https://github.com/m2ux/workflow-server/tree/785a5ee8c715b802498aa41712e0489425a22cfa/skills/work-planner), Deliver compiles to 353717 bytes, Plan 328950, Advance 314874, Standup 273929 and Sync 264276, against a default output budget of 262144.
+- **A mode's prerequisites compile other modes whole.**
+  [Plan Mode's Prerequisites](https://github.com/m2ux/workflow-server/blob/785a5ee8c715b802498aa41712e0489425a22cfa/skills/work-planner/modes/plan-mode.md#L11-L27) link Propose Mode and Sync Mode, so the Plan bundle carries both although its steps run each in only one case.
+- **Hand-offs are prose.**
+  [Deliver Mode](https://github.com/m2ux/workflow-server/blob/785a5ee8c715b802498aa41712e0489425a22cfa/skills/work-planner/modes/deliver-mode.md#L101-L105) starts a unit's session through a sentence, and no link carries a dispatch or deferral operator.
+- **Links name whole files.**
+  245 of the skill's 1075 internal links name a whole file whose content carries sections, and each compiles that whole file into the bundle.
+- **The rules describe reading, not compiling.**
+  The [shared Links rules](https://github.com/m2ux/workflow-server/blob/785a5ee8c715b802498aa41712e0489425a22cfa/skills/guidelines.md#L105-L118) type links for a reader who chooses what to open, and say nothing of a bundle, an operator or a budget.
+- **Nothing compiles the skill.**
+  The [shared skill-file check](https://github.com/m2ux/workflow-server/blob/785a5ee8c715b802498aa41712e0489425a22cfa/skills/scripts/check_skill_files.py#L1025-L1029) reads link resolution and placement, so a mode that overflows the budget or reaches another mode whole draws no finding.
+- **A check is named by its path.**
+  The shared guidelines' [Verified rule](https://github.com/m2ux/workflow-server/blob/785a5ee8c715b802498aa41712e0489425a22cfa/skills/guidelines.md#L198) names the shared check as a code span, and their [Files rule](https://github.com/m2ux/workflow-server/blob/785a5ee8c715b802498aa41712e0489425a22cfa/skills/guidelines.md#L27-L28) says where checks sit without saying what any of them decides.
+
+## Proposal
+
+- **Cut over first, unchanged.**
+  The skill's history and the shared guide, rules, check and tests move as they are to the root of prosiform-skills, in the shape workflow-server's `skills/` folder had.
+- **Planning and delivery follow the skill.**
+  Task and epic pull requests target `main`, and planning records live on an orphan `engineering` branch.
+- **Skills belong to each workspace.**
+  The workspace that uses the skill vendors prosiform-skills as a submodule pinned to a commit and links the skill into its `skills/`. workflow-server's template supports that pattern, vendors nothing itself, and drops its copy.
+- **Refactor after the link.**
+  Only once the skill is linked does it change: its commands and the shared check fit the new root, and the board's Priority field replaces the priority labels.
+- **The shared guide states the prosiform rules.**
+  A skill bootstraps by running `pf`; a link names the section its reader must have, and a mention is plain text; `⇉` and `⫽` carry hand-offs and `¬` conditional reads; each mode fits the default budget.
+- **A check is defined where prose names it.**
+  The shared guide defines each check prosiform-skills runs, and prose names a check by linking to that definition.
+- **The skill is brought to the rules, then held to them.**
+  Its links, hand-offs, entry point and modes conform first; the shared check then enforces the prosiform rules over every skill it runs over, and each mode's bundle size is recorded against a fixed baseline revision.
+
+## Work Breakdown
+
+| Epic | Description | Coverage | Depends on | Done |
+| --- | --- | --- | --- | --- |
+| [E00](https://github.com/m2ux/prosiform-skills/issues/2) | Skill Cutover | AC1 | | |
+| [E01](https://github.com/m2ux/prosiform-skills/issues/3) | Workspace Linkage | AC3, AC4 | | |
+| [E02](https://github.com/m2ux/prosiform-skills/issues/5) | Skill Refactor | AC2 | [E00](https://github.com/m2ux/prosiform-skills/issues/2), [E01](https://github.com/m2ux/prosiform-skills/issues/3) | |
+| [E03](https://github.com/m2ux/prosiform-skills/issues/4) | Priority Field | AC5, AC6 | [E00](https://github.com/m2ux/prosiform-skills/issues/2), [E01](https://github.com/m2ux/prosiform-skills/issues/3) | |
+| [E04](https://github.com/m2ux/prosiform-skills/issues/6) | Shared Prosiform Rules | AC12 | [E00](https://github.com/m2ux/prosiform-skills/issues/2), [E01](https://github.com/m2ux/prosiform-skills/issues/3) | |
+| [E05](https://github.com/m2ux/prosiform-skills/issues/7) | Check Definitions | AC14 | [E02](https://github.com/m2ux/prosiform-skills/issues/5) |  |
+| [E06](https://github.com/m2ux/prosiform-skills/issues/8) | Work Planner Links | AC9, AC10 | [E02](https://github.com/m2ux/prosiform-skills/issues/5), [E04](https://github.com/m2ux/prosiform-skills/issues/6) | |
+| [E07](https://github.com/m2ux/prosiform-skills/issues/9) | Use Through Prosiform | AC7, AC8, AC9, AC11, AC13 | [E06](https://github.com/m2ux/prosiform-skills/issues/8) | |
+
+## Acceptance Criteria
+
+- [ ] **AC1.** The work-planner skill and the shared files it is checked against stand at the root of prosiform-skills' `main` with the history they had in workflow-server, as a tree and log comparison against the extracted workflow-server commit shows.
+- [ ] **AC2.** The skill's tests and the shared check pass from the root of a prosiform-skills checkout, as their runs on `main` show.
+- [ ] **AC3.** workflow-server's `workspace` template carries no copy of the skill, and none of its skill files outside workflow-canon names it, as a listing and a grep of its head show.
+- [ ] **AC4.** prosiform's workspace runs the skill from a prosiform-skills commit it pins, as the skill's test suite run through its link in a fresh clone shows.
+- [ ] **AC5.** Board Queue ranks each theme board's work by its board item's Priority number, as the queue's tests show.
+- [ ] **AC6.** No repository whose issues a theme board holds carries a `priority:` label, as a label listing of each shows.
+- [ ] **AC7.** Every Work Planner mode on `main` compiles under the pinned `pf` within its default output budget with no warning, as the shared skill-file check's compile run reports over `work-planner`.
+- [ ] **AC8.** A session given a Work Planner request runs `pf` from the entry point and follows the bundle of the mode it selects, as a walk of a representative request from the entry point records.
+- [ ] **AC9.** No Work Planner link compiles content its reader need not have, whether a whole file whose target carries sections or another mode reached outside a dispatch or a deferral, as the shared skill-file check reports over `work-planner`.
+- [ ] **AC10.** Each Work Planner hand-off to a sub-agent dispatches the procedure followed, and each citation a step reads only in some cases is deferred, as the hand-off and conditional-citation inventories the planning record holds show against the compiled bundles.
+- [ ] **AC11.** No Work Planner mode's compiled bundle is larger than at the baseline revision the planning record fixes, as the bundle-size comparison records using one prosiform version on both revisions.
+- [ ] **AC12.** `guidelines.md` states the rules a skill used through prosiform follows — its bootstrap, its links, its operators and its budget — as a read of the guidelines on `main` shows.
+- [ ] **AC13.** The shared skill-file check reports a violation of each prosiform rule it decides in any skill it runs over, as the check's own test suite shows against specimen skills.
+- [ ] **AC14.** Prose in Work Planner and the shared guide reaches each check prosiform-skills runs through a definition stating what it decides, which skills it binds, how it is run and where its tests live, as the shared skill-file check reports over `work-planner`.
+
+## Non-Goals
+
+- It moves no skill other than work-planner.
+- It keeps the two repositories' copies of the shared skill files in step by no mechanism.
+- It adds no prosiform-skills submodule to workflow-server's template, so a workspace made from it receives no work-planner.
+- It leaves workflow-canon's `references/revise-mode.md` naming `skills/work-planner`.
+- It leaves the proposals boards' Priority field as it stands.
+- It sets no Priority value beyond the one a numbered label carried.
+- It changes neither prosiform nor its default budgets.
+- It generates and checks no read-set manifest for any skill.
+- It walks neither retrieval order nor citation efficacy, which compilation settles.
+
+## References
+
+- **R1.** [workflow-server `skills/` at the evidence revision](https://github.com/m2ux/workflow-server/tree/785a5ee8c715b802498aa41712e0489425a22cfa/skills) — the folder the skill and its shared files come from. The extraction is cut from workflow-server's `workspace` head once I17's Pre-Cutover Fixes epic closes.
+- **R2.** [m2ux/workflow-server#1595](https://github.com/m2ux/workflow-server/issues/1595) — the Priority field change this initiative carries over.
+- **R3.** [Planning record](https://github.com/m2ux/prosiform-skills/tree/engineering/artifacts/planning/2026-11-02-1-i16-work-planner-repository) — the decisions, the evidence, the goal trace, each review and each task's work item.
+- **R4.** [m2ux/workflow-server#1427](https://github.com/m2ux/workflow-server/issues/1427) — a plan for Work Planner citations under link-following reading; its section-link, mention, hand-off and check-definition evidence feeds this initiative's Problem.
+- **R5.** [Prosiform references](https://github.com/m2ux/prosiform/blob/23882b7d/docs/references.md) — what makes a link a dependency, and the deferral and dispatch operators.
+- **R6.** [Prosiform dispatch](https://github.com/m2ux/prosiform/blob/23882b7d/docs/dispatch.md) — the bundle a dispatch publishes and the protocol a sub-agent follows.
+- **R7.** [Prosiform validation](https://github.com/m2ux/prosiform/blob/23882b7d/docs/validation.md) — the budgets each bundle is held to and the warnings a run reports.
+
+🤖 Generated with [Claude Code](https://claude.com/claude-code)
