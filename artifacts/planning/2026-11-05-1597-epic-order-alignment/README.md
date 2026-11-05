@@ -24,6 +24,12 @@ The confirmed order matches the producer graph while preserving task ids, criter
 | [progress.md](progress.md) | Renumbering evidence and approved plan |
 | [renumber.txt](renumber.txt) | Renumbering evidence and approved plan |
 
+| [branch-verification.txt](branch-verification.txt) | Saved-state verification |
+| [m2ux--prosiform-skills--2.after.json](m2ux--prosiform-skills--2.after.json) | Saved-state verification |
+| [verification.json](verification.json) | Saved-state verification |
+
+| [Post-publication format](post-publication-format.json) | Validation of actual saved issue bodies |
+
 ## Links
 
 | Resource | Link |
