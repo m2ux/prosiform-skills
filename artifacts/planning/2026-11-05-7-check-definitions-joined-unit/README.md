@@ -26,6 +26,10 @@ This keeps edits to the shared guidelines together and gives the dependency grap
 | [issue-7.proposed.json](issue-7.proposed.json) | Joined-unit plan and verification |
 | [progress.md](progress.md) | Joined-unit plan and verification |
 
+| [issue-1.after.json](issue-1.after.json) | Published-state verification |
+| [issue-7.after.json](issue-7.after.json) | Published-state verification |
+| [verification.json](verification.json) | Published-state verification |
+
 ## Links
 
 | Resource | Link |

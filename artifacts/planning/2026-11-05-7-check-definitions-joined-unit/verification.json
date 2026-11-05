@@ -1,0 +1,27 @@
+{
+  "issues": [
+    {
+      "issue": 1,
+      "body_exact": true,
+      "title": "[I16] Work Planner Home: The Skill in a Repository of Its Own"
+    },
+    {
+      "issue": 7,
+      "body_exact": true,
+      "title": "[I16:E05] Check Definitions: Each Check Defined in the Shared Guide, Named by Link"
+    }
+  ],
+  "formats": [
+    {
+      "issue": 1,
+      "exit": 0,
+      "report": "#1 initiative (open): 0 fixed, 0 to apply, 0 to decide\n"
+    },
+    {
+      "issue": 7,
+      "exit": 0,
+      "report": "#7 epic (open): 0 fixed, 0 to apply, 0 to decide\n"
+    }
+  ],
+  "dependencies_exit": 0
+}
