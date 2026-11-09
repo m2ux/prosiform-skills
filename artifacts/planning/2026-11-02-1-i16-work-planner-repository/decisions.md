@@ -62,7 +62,7 @@ The installed `pf` reports 0.12.0 (`skill-markdown-v1`). Prosiform's README and 
 
 The user holds the version undecided while prosiform is under heavy revision. Bodies name the pinned `pf` without a version. Settled before E04 or E07 starts.
 
-The pin is v0.24.0 or later (user, 9 November 2026): on `pf` 0.23.0, SKILL.md and eight of ten modes fail an internal no-accidental-expansion check that [prosiform#703](https://github.com/m2ux/prosiform/issues/703) (F09) fixes for release in v0.24.0. No epic waits on a hot-fix, so this open question is what holds E04 and E07.
+The pin is v0.24.0 or later (user, 9 November 2026): on `pf` 0.23.0, SKILL.md and eight of ten modes fail an internal no-accidental-expansion check that [prosiform#703](https://github.com/m2ux/prosiform/issues/703) (F09) fixes, released as `contract/v0.24.0` and `python/v0.24.0` on 9 November 2026. No epic waits on a hot-fix, so this open question is what holds E04 and E07.
 
 ### OQ2. Baseline Revision
 
