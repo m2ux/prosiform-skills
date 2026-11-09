@@ -62,6 +62,8 @@ The installed `pf` reports 0.12.0 (`skill-markdown-v1`). Prosiform's README and 
 
 The user holds the version undecided while prosiform is under heavy revision. Bodies name the pinned `pf` without a version. Settled before E04 or E07 starts.
 
+The pin is v0.24.0 or later (user, 9 November 2026): on `pf` 0.23.0, SKILL.md and eight of ten modes fail an internal no-accidental-expansion check that [prosiform#703](https://github.com/m2ux/prosiform/issues/703) (F09) fixes for release in v0.24.0. No epic waits on a hot-fix, so this open question is what holds E04 and E07.
+
 ### OQ2. Baseline Revision
 
 The baseline E07's bundle-size comparison measures against. Settled before E07 starts.
@@ -72,3 +74,12 @@ The baseline E07's bundle-size comparison measures against. Settled before E07 s
 ## Joined Check Definitions, 5 November 2026
 
 The user confirms E05 W01 and W02 as one pull request, waiting for both E02 W01 and W02. The Joins cells are reciprocal; there is no dependency between members. Their prerequisite union derives E02 as E05's initiative-level prerequisite. The unit is unlaned, and the third row consumes its completed prose output through W02. The row ids, criteria and work items retain their identities.
+
+## Prosiform Adoption, 9 November 2026
+
+A trial on a copy of the skill, `prosiform: {}` on each of its 59 documents under `pf` 0.23.0, compiled propose (55711-byte bundle) and revise (65375); every other entry failed the check OQ1 records.
+
+- **Modes are the entries.** SKILL.md is read, not compiled: its Modes list selects a mode, and its instruction is to run `pf` on that mode file. E07 W01, its AC1 and the initiative's AC8 state the routing (user).
+- **Sub-agent steps split first.** A mode over the budget hands each step a sub-agent runs to a `⇉` link with a bundle of its own before any section moves; a budget is raised only for a mode still over after both (user).
+- **Each mode compiles against stubs.** A `test` preset per mode replaces its artifacts and protocols with stubs through `subst`, and the skill's test suite compiles every mode with it. E07 W06 carries it, depending on W02, covering E07 AC9 and the initiative's AC15 (user).
+- **No new initiative.** The adoption is folded into this one rather than raised in workflow-server (user).
