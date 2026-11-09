@@ -42,11 +42,12 @@ It matters because the skill's history, pull requests and planning have shared a
 | [E06 W02](e06/w02.md) | Modes named in passing as text |
 | [E06 W03](e06/w03.md) | Hand-offs dispatched, conditional reads deferred |
 | [E07 W01](e07/w01.md) | Entry point routes to a compiled mode |
-| [E07 W02](e07/w02.md) | Every mode compiled within budget |
-| [E07 W03](e07/w03.md) | Bundle sizes compared against baseline, delivered by the comparison it records |
-| [E07 W04](e07/w04.md) | Check reports link scope and mode reach |
-| [E07 W05](e07/w05.md) | Check compiles each mode under budget |
-| [E07 W06](e07/w06.md) | Each mode compiles against stubbed artifacts and protocols |
+| [E07 W02](e07/w02.md) | Content grain reviewed and its rubric stated |
+| [E07 W03](e07/w03.md) | Every mode compiled within budget |
+| [E07 W04](e07/w04.md) | Bundle sizes compared against baseline, delivered by the comparison it records |
+| [E07 W05](e07/w05.md) | Check reports link scope and mode reach |
+| [E07 W06](e07/w06.md) | Check compiles each mode under budget |
+| [E07 W07](e07/w07.md) | Each mode compiles against stubbed artifacts and protocols |
 
 ## Links
 

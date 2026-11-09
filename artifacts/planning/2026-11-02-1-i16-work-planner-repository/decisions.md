@@ -46,7 +46,7 @@
 - **Rules before conformance.** E04 states the prosiform rules in `guidelines.md` only; the check machinery that enforces them is E07's last two rows, joined in one pull request.
 - **Prose before its finding.** E05 links each check's definition from prose before the check reports a bare check path, so E05's base never carries that finding.
 - **Inventories verify E06.** The check's prosiform findings land after E06, so E06's criteria are verified by the link, mode-link, hand-off and conditional-citation inventories each task records here, an instrument independent of the check. E07's final run of the check confirms them on `main`.
-- **The bundle comparison is a record.** E07 W03 takes no pull request and is delivered by the comparison committed to this record, as the label deletion is delivered by its listing.
+- **The bundle comparison is a record.** E07 W04 takes no pull request and is delivered by the comparison committed to this record, as the label deletion is delivered by its listing.
 - **The Checks entry grows with the check.** E05 defines each check as it stands; E07's check rows extend the shared check's entry with the findings and compile run they add.
 - **Measurements carried from the draft.** The bundle sizes, link counts and check callers were measured at workflow-server `785a5ee8c`, the evidence revision, with `pf` 0.12.0. See [Evidence](evidence.md).
 
@@ -81,5 +81,12 @@ A trial on a copy of the skill, `prosiform: {}` on each of its 59 documents unde
 
 - **Modes are the entries.** SKILL.md is read, not compiled: its Modes list selects a mode, and its instruction is to run `pf` on that mode file. E07 W01, its AC1 and the initiative's AC8 state the routing (user).
 - **Sub-agent steps split first.** A mode over the budget hands each step a sub-agent runs to a `⇉` link with a bundle of its own before any section moves; a budget is raised only for a mode still over after both (user).
-- **Each mode compiles against stubs.** A `test` preset per mode replaces its artifacts and protocols with stubs through `subst`, and the skill's test suite compiles every mode with it. E07 W06 carries it, depending on W02, covering E07 AC9 and the initiative's AC15 (user).
+- **Each mode compiles against stubs.** A `test` preset per mode replaces its artifacts and protocols with stubs through `subst`, and the skill's test suite compiles every mode with it. E07 W07 carries it, depending on W03, covering E07 AC9 and the initiative's AC15 (user).
 - **No new initiative.** The adoption is folded into this one rather than raised in workflow-server (user).
+
+## Content Grain, 9 November 2026
+
+- **A grain review precedes the budget fit.** E07 W02 measures each protocol and artifact, and each procedure, operation, command and field section it holds, for bundle share, reach, dead weight and cohesion, and gives each a verdict of keep, split, merge or move (user).
+- **Analysis, then planned changes.** The report lives in this record; each confirmed split, merge or move becomes an E07 row ahead of W03, the budget fit (user).
+- **After the links, before the fit.** E07 W02 depends on E06:W03, so it measures links as E06 leaves them, and W03 depends on W02. The grain review takes W02 and the rows after it move up one, so each task depends only on earlier ones (user).
+- **A rubric for Work Planner.** The measures, thresholds and verdict rules are stated in `work-planner/references/grain-rubric.md`, and Revise Mode holds each new or changed protocol and artifact to it. The rubric is Work Planner's own, since its structure is not necessarily shared by other skills; the shared guidelines gain no grain rule (user).
